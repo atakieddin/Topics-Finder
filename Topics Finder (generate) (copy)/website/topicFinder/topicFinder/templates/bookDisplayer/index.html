@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+<head> 
+	<title> Welcome </title>
+</head>
+{% block content %}
+
+	<div class="container">
+	  	<h1>Homepage</h1>
+	    <h3> Model information: </h3>
+	    <div class="well well-sm">
+	    	<h4><b> TimeStamp:</b> </h4><font size = "+1"><i>{{model_field.timestamp}}</i></font> <br>
+	    
+	    	<h4><b> Alpha: </b></h4><font size = "+1"><i> {{model_field.alpha}}</i></font> <br>
+	    
+	    	<h4><b> Beta: </b></h4><font size = "+1"><i> {{model_field.beta}}</i></font> <br>
+
+	    	<h4><b> Iterations: </b></h4><font size = "+1"><i> {{model_field.iterations}}</i></font> <br>
+
+	    	<h4><b> Number of topics: </b></h4><font size = "+1"><i> {{model_field.num_topics}}</i></font><br>
+	    </div>
+
+
+
+	</div>
+
+{% endblock %}
+
+
